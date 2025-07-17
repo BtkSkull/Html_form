@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id='title'>One Piece Survey Form</h1>
+      <p id='description'>This form is to take a survey of all of you.
+      </p>
+    </header>
+    <main>
+      <form method='POST' action='/submit'  id='survey-form' >
+      <fieldset >
+        <legend>Persnol Information</legend>
+        <label id='name-label'>Full Name
+        <input required type='text' id='name' name='name' placeholder='Mayank Sharma'></label>
+        <label id='email-label'>Email
+        <input required type='email' id='email' name='email' placeholder='bloxfruiz000@gmail.com'></label>
+        <label id='number-label'>Age
+        <input required type='number' id='number' name='number' min='18' max='100' placeholder='18'></label>
+      </fieldset>
+      <fieldset>
+        <legend>Main Questions</legend>
+        <label>Choose
+        <select id='dropdown'>
+          <option>Sanji</option>
+          <option>Zoro</option>
+        </select></label>
+        <br>
+        <label>Which character is better?</label>
+        <label>Brook
+        <input type='radio' name='name' value='Sanji' name='name' ></label>
+        <label>Franky
+        <input type='radio' name='name' value='Zoro'></label>
+        <br>
+        <label>Robin is the best waifu
+        <input checked type='checkbox' name='Waifu' value='Robin'></label>
+        <br>
+        <label>Chopper is the cutest
+        <input checked type='checkbox' name='cute' value='Chopper'></label>
+        <br>
+        <label>Your opinon on <u><b>One Piece</b></u> (optional)
+        <textarea rows='5' cols='50' type='text' minlength='0' maxlength='100' ></textarea></label>
+      </fieldset>
+      <button type='submit' id='submit' name='submit'>SUBMIT</button>
+      <form>
+    </main>
+  </body>
+</html>
